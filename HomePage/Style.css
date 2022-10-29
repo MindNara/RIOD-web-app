@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Prompt', sans-serif;
+}
+
+header {
+    height: 9vh;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul {
+    margin: auto;
+    padding: 20px 0 0;
+    list-style: none;
+    text-align: right;
+}
+
+nav ul li {
+    float: none;
+    display: inline-block;
+}
+
+nav ul li:nth-child(1),
+nav ul li:nth-child(2) {
+    float: left;
+}
+
+nav ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    padding: 12px 30px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+nav ul li img {
+    padding: 10px 30px 10px 0px;
+    cursor: pointer;
+}
+
+#navbar {
+    width: 100%;
+    position: absolute;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 47.5%;
+    top: 0%;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 10px 0 0;
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menProd,
+.womanProd {
+    width: 100%;
+    height: 91vh;
+    cursor: pointer;
+}
+
+.menProd {
+    background-image: url(https://drive.google.com/uc?id=1FyrPbl9Zh1HRtmYT8mwmFXj2bMOA3KcE);
+    background-size: cover;
+    background-position: center;
+}
+
+.womanProd {
+    background-image: url(https://drive.google.com/uc?id=1bIjt49WcpfzN4e_aRcadNAK8Sd7iDpxK);
+    background-size: cover;
+}
+
+.banner div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner div h1 {
+    font-size: 80px;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 10px 5px 8px rgba(0, 0, 0, 0.452);
+    padding: 0;
+    transform: scale(1, .9);
+}
+
+.banner div p {
+    font-size: 20px;
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: -20px 0 30px 0;
+    text-shadow: 10px 5px 8px rgba(0, 0, 0, 0.452);
+    transform: scale(1, .8);
+}
+
+button {
+    border: none;
+    color: black;
+    background: white;
+    padding: 18px 28px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Prompt', sans-serif;
+    cursor: pointer;
+    transform: scale(1, .8);
+    transition: 0.5s;
+}
+
+button:hover {
+    color: white;
+    background: black;
+}
