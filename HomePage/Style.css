@@ -38,7 +38,7 @@ nav ul li a {
     font-size: 14px;
     text-decoration: none;
     display: block;
-    padding: 12px 30px;
+    margin: 12px 30px;
     color: black;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -46,7 +46,7 @@ nav ul li a {
 }
 
 nav ul li img {
-    padding: 10px 30px 10px 0px;
+    margin: 10px 30px 10px 0px;
     cursor: pointer;
 }
 
@@ -59,7 +59,7 @@ nav ul li img {
     width: 100px;
     height: 100px;
     position: absolute;
-    left: 47.5%;
+    left: 47%;
     top: 0%;
     font-size: 40px;
     font-weight: 600;
