@@ -1,21 +1,85 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-    font-size: 120%;
-    font-family: Century Gothic Std,arial,sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Prompt', sans-serif;
 }
 
 .header {
     width: 30%;
     margin: 50px auto 0px;
     text-align: center;
-    padding: 20px;
-    font-size: 1em;
-    color: #777777;
+    padding: 50px;
+    color: #979797;
     letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+header {
+    height: 9vh;
+}
+
+nav {
+    width: 80%;
+    margin: 0 auto;
+}
+
+nav ul {
+    margin: auto;
+    padding: 20px 0 0;
+    list-style: none;
+    text-align: right;
+}
+
+nav ul li {
+    float: none;
+    display: inline-block;
+}
+
+nav ul li:nth-child(1),
+nav ul li:nth-child(2) {
+    float: left;
+}
+
+nav ul li a {
+    font-size: 14px;
+    text-decoration: none;
+    display: block;
+    padding: 12px 30px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+nav ul li img {
+    padding: 10px 30px 10px 0px;
+    cursor: pointer;
+}
+
+#navbar {
+    width: 100%;
+    position: absolute;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 47%;
+    top: 0%;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    padding: 10px 0 0;
+    text-decoration: none;
+    color: black;
+    cursor: default;
 }
 
 form {
@@ -58,7 +122,7 @@ form {
     border: none;
     border-bottom: 0.5px solid rgb(22, 22, 22);
     opacity: 50%;
-    
+
 }
 
 .input-group input:focus {
@@ -81,11 +145,12 @@ form {
     letter-spacing: 2px;
     font-weight: bold;
 }
-.Sign-Up{
+
+.Sign-Up {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-} 
+}
 
 .error {
     width: 92%;
@@ -157,19 +222,43 @@ nav a {
 nav a:hover {
     color: hsl(0, 0%, 100%);
     background: #0e0e0e;
-    
+
 }
 
 
 /*Filter styles*/
-.saturate { filter: saturate(3); }
-.grayscale { filter: grayscale(100%); }
-.contrast { filter: contrast(160%); }
-.brightness { filter: brightness(0.25); }
-.blur { filter: blur(3px); }
-.invert { filter: invert(100%); }
-.sepia { filter: sepia(100%); }
-.huerotate { filter: hue-rotate(180deg); }
-.rss.opacity { filter: opacity(50%); }
+.saturate {
+    filter: saturate(3);
+}
 
+.grayscale {
+    filter: grayscale(100%);
+}
 
+.contrast {
+    filter: contrast(160%);
+}
+
+.brightness {
+    filter: brightness(0.25);
+}
+
+.blur {
+    filter: blur(3px);
+}
+
+.invert {
+    filter: invert(100%);
+}
+
+.sepia {
+    filter: sepia(100%);
+}
+
+.huerotate {
+    filter: hue-rotate(180deg);
+}
+
+.rss.opacity {
+    filter: opacity(50%);
+}

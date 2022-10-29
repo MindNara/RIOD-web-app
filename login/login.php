@@ -16,25 +16,23 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav-items-1">
-            <a href="#">Men's Fashion</a>
-            <a href="#">Women's Fashion</a>
+    <header>
+        <div id="navbar">
+            <a class="logo">RIOD</a>
+            <nav>
+                <ul>
+                    <li><a href="#">Men's Fashion</a></li>
+                    <li><a href="#">Woman's Fashion</a></li>
+                    <li><img href="#" src="https://drive.google.com/uc?id=1X5sxcAb9joKPlVRt2D8SQPZsjw5uUkE_" width="24px"></li>
+                    <li><img href="#" src="https://drive.google.com/uc?id=1vc_Qugk8SxibamNq_wTBnpRCHRf6Abyp" width="24px" padding-left="20px"></li>
+                </ul>
+            </nav>
+            <hr>
         </div>
-
-        <div class="logo">
-            <h1>RIOD</h1>
-        </div>
-        </div>
-
-        <div class="nav-items-2">
-            <a href="#cart"><img class="cart" src="https://bit.ly/3DrG4A2"></a>
-            <a href="#cart"><i class="fa fa-shopping-cart" style="font-size:32px"></i></a>
-        </div>
-    </nav>
+    </header>
 
     <div class="header">
-        <h2>LOGIN</h2>
+        <a>LOGIN</a>
     </div>
 
     <form action="login_db.php" method="post">
