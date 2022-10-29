@@ -152,6 +152,10 @@ form {
     font-weight: bold;
 }
 
+.signUp, .logIn {
+    color: black;
+}
+
 .error {
     width: 92%;
     margin: 0px auto;
