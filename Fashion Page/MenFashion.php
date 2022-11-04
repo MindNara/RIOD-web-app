@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/78988707d3.js" crossorigin="anonymous"></script>
+    <script src="Scroll.js"></script>
     <link rel="stylesheet" href="Fashion.css">
     <title>Men's Fashion</title>
 </head>
 
 <body>
     <header>
+        <div class="progressBar"></div>
         <div id="navbar">
             <a class="logo" href="HomePage.html">RIOD</a>
             <nav>
