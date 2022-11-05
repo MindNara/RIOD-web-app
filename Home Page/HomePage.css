@@ -35,6 +35,12 @@ nav ul li:nth-child(2) {
     float: left;
 }
 
+nav ul li:nth-child(3),
+nav ul li:nth-child(4),
+nav ul li:nth-child(5) {
+    float: right;
+}
+
 nav ul li a {
     font-size: 14px;
     text-decoration: none;
@@ -145,3 +151,71 @@ nav ul li a img {
     background: black;
 }
 
+.homecontent {
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 12px 30px 12px 0;
+    color: black;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.productBox2 {
+    width: 80%;
+    margin: 0 4px;
+    
+}
+
+.productBox2 ul {
+    list-style: none;
+    
+}
+
+.category2 {
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.category2 li a {
+    text-decoration: none;
+    color: black;
+    transition: 1s;
+    
+}
+
+.dropdown2 .logout p a:hover {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.dropdown2 {
+    position: absolute;
+    background-color: white;
+
+    width: 6%;
+    opacity: 0;
+    visibility: hidden;
+    padding: 0;
+    display: grid;
+    z-index: 1;
+}
+
+.dropdown2 li {
+    margin: 10px 30px 0;
+}
+
+.category2 li ul {
+    padding: 0 0 0 0px;
+}
+
+.category2:hover .dropdown2 {
+    opacity: 1;
+    visibility: visible;
+    border: 1px solid black;
+    border-radius: 15px;
+}
