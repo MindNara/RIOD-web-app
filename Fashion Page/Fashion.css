@@ -313,7 +313,7 @@ nav ul li a:hover {
 }
 
 .category2 li ul {
-    padding: 0 0 0 30px;
+    padding: 0 0 0 0;
 }
 
 .category2:hover .dropdown2 {
