@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+
+if (isset($_GET['addcart'])) {
+    unset($_SESSION['username']);
+    header('location: login.php');
+}
+
+
+?>
 <html lang="en">
 
 <head>
@@ -11,17 +22,48 @@
 </head>
 
 <body>
+
     <header>
         <div class="progressBar"></div>
+
         <div id="navbar">
-            <a class="logo" href="HomePage.html">RIOD</a>
+            <a class="logo" href="HomePage.php">RIOD</a>
             <nav>
                 <ul>
                     <li><a href="MenFashion.php">Men's Fashion</a></li>
                     <li><a href="WomanFashion.php">Woman's Fashion</a></li>
-                    <li><a href="Login.php"><img src="https://drive.google.com/uc?id=1X5sxcAb9joKPlVRt2D8SQPZsjw5uUkE_" width="24px"></a>
+                    <li><a href="cart.php"><img src="https://drive.google.com/uc?id=1vc_Qugk8SxibamNq_wTBnpRCHRf6Abyp" width="24px"></a></li>
+                    <li>
+                        <div class="productBox2">
+                            <ul class="category2">
+                                <li><a href="Login.php"><img src="https://drive.google.com/uc?id=1X5sxcAb9joKPlVRt2D8SQPZsjw5uUkE_" width="24px"></a>
+                                    <?php if (isset($_SESSION['username'])) : ?>
+                                        <ul class="dropdown2">
+                                            <div class="logout">
+                                                <!-- logged in user information -->
+                                                <?php if (isset($_SESSION['username'])) : ?>
+                                                    <p><a href="HomePage.php?logout='1'" style="color: black;">Logout</a></p>
+                                                <?php endif ?>
+
+                                        </ul>
+                                </li>
+                        </div>
                     </li>
-                    <li><a href="#"><img src="https://drive.google.com/uc?id=1vc_Qugk8SxibamNq_wTBnpRCHRf6Abyp" width="24px"></a></li>
+                <?php endif ?>
+
+                <li>
+                    <div class="homecontent">
+
+
+                        <!-- logged in user information -->
+                        <?php if (isset($_SESSION['username'])) : ?>
+
+                            <?php echo  $_SESSION['username']; ?>
+
+                        <?php endif ?>
+                    </div>
+                </li>
+
                 </ul>
             </nav>
         </div>
@@ -34,6 +76,7 @@
             eveniet explicabo totam. Explicabo, remat?
         </p>
     </div>
+
 
     <div class="productBox">
         <ul class="category">
@@ -76,7 +119,7 @@
                         <p class="detail"><?php echo $product['detail']; ?></p>
                         <h3 class="price"><?php echo "฿ " . $product['price']; ?></h3>
                     </div>
-                    <a href="#"><i class="fa-solid fa-plus basket"></i></a>
+                    <a href="cart.php?addcart='1'"><i class="fa-solid fa-plus basket"></i></a>
                 </div>
             <?php } ?>
         </div>
