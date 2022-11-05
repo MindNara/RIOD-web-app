@@ -23,8 +23,8 @@
 
             if (mysqli_num_rows($result) == 1) {
                 $_SESSION['username'] = $username;
-                $_SESSION['success'] = "Your are now logged in";
-                header("location: index.php");
+                $_SESSION['success'] = "";
+                header("location: HomePage.php");
             } else {
                 array_push($errors, "Wrong Username or Password");
                 $_SESSION['error'] = "Wrong Username or Password!";
@@ -36,5 +36,3 @@
             header("location: login.php");
         }
     }
-
-?>
