@@ -18,14 +18,14 @@ include('server.php');
 <body>
     <header>
         <div id="navbar">
-            <a class="logo">RIOD</a>
+            <a class="logo" href="HomePage.php">RIOD</a>
             <nav>
                 <ul>
-                    <li><a href="#">Men's Fashion</a></li>
-                    <li><a href="#">Woman's Fashion</a></li>
+                    <li><a href="MenFashion.php">Men's Fashion</a></li>
+                    <li><a href="WomanFashion.php">Woman's Fashion</a></li>
                     
                     <li><a href='login.php'><img src='https://drive.google.com/uc?id=1X5sxcAb9joKPlVRt2D8SQPZsjw5uUkE_' width="24px"></a></li>
-                    <li><a href='login.php'><img href="#" src="https://drive.google.com/uc?id=1vc_Qugk8SxibamNq_wTBnpRCHRf6Abyp" width="24px" padding-left="20px"></a></li>
+                    <li><a href='cart.php'><img  src="https://drive.google.com/uc?id=1vc_Qugk8SxibamNq_wTBnpRCHRf6Abyp" width="24px" padding-left="20px"></a></li>
                 </ul>
             </nav>
             <hr>
