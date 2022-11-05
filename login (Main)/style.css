@@ -46,6 +46,7 @@ nav ul li:nth-child(2) {
     float: left;
 }
 
+
 nav ul li a {
     font-size: 14px;
     text-decoration: none;
@@ -94,15 +95,18 @@ form {
 }
 
 .homecontent {
-    text-align: center;
-    padding-top: 3rem;
-    width: 100%;
-    background: rgb(148, 148, 148);
-    height: 100vh;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 12px 30px 12px 0;
+    color: black;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 .input-group {
-    color: #ffffff;
+    color: black;
     margin: 10px 0px 10px 0px;
 }
 
