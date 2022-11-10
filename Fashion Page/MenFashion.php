@@ -125,10 +125,30 @@ if (isset($_GET['addcart'])) {
         </div>
     </div>
     <br>
-
+    
     <footer>
         <div class="footer">
-            <p>Test Footer</p>
+            <p>JOIN OUR NEWSLETTER</p>
+            <div class="contact">
+                <ul>
+                    <li><a href="#">TIKTOK</a></li>
+                    <li><a href="#">INSTAGRAM</a></li>
+                    <li><a href="#">FACEBOOK</a></li>
+                    <li><a href="#">TWITTER</a></li>
+                    <li><a href="#">PINTEREST</a></li>
+                    <li><a href="#">YOUTUBE</a></li>
+                    <li><a href="#">SPOTIFY</a></li>
+                </ul>
+            </div>
+            <div class="setting">
+                <ul>
+                    <li><a href="#">COOKIES SETTINGS</a></li>
+                    <p>|</p>
+                    <li><a href="#">PRIVACY AND COOKIES POLICY</a></li>
+                    <p>|</p>
+                    <li><a href="#">TERMS OF USE</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 
