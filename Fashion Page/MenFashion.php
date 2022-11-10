@@ -84,11 +84,11 @@ if (isset($_GET['addcart'])) {
                     <img src="https://media.discordapp.net/attachments/1032627025489432626/1037361821948059689/icons8-expand-arrow-50.png" height="16px" width="16px">
                 </a>
                 <ul class="dropdown">
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Shirts</a></li>
-                    <li><a href="#">Shorts</a></li>
-                    <li><a href="#">Jeans</a></li>
-                    <li><a href="#">Coat</a></li>
+                    <li class="list active" data-filter="all">All</li>
+                    <li class="list" data-filter="Shirt">Shirts</li>
+                    <li class="list" data-filter="Short">Shorts</li>
+                    <li class="list" data-filter="jean">Jeans</li>
+                    <li class="list" data-filter="Coat">Coat</li>
                 </ul>
             </li>
         </ul>
@@ -103,24 +103,24 @@ if (isset($_GET['addcart'])) {
 
         <div class="containerProduct">
             <?php foreach ($result as $product) { ?>
-                <div class="product">
-                    <div class="card">
-                        <div class="content">
-                            <div class="front">
-                                <img class="imgProd" src="<?php echo $product['image1']; ?>">
-                            </div>
-                            <div class="back">
-                                <img class="imgProd" src="<?php echo $product['image2']; ?>">
-                            </div>
+            <div class="product" data-item="<?php echo $product['type']; ?>">
+                <div class="card">
+                    <div class="content">
+                        <div class="front">
+                            <img class="imgProd" src="<?php echo $product['image1']; ?>">
+                        </div>
+                        <div class="back">
+                            <img class="imgProd" src="<?php echo $product['image2']; ?>">
                         </div>
                     </div>
-                    <div class="textProd">
-                        <h3><?php echo $product['name']; ?></h3>
-                        <p class="detail"><?php echo $product['detail']; ?></p>
-                        <h3 class="price"><?php echo "฿ " . $product['price']; ?></h3>
-                    </div>
-                    <a href="cart.php?addcart='1'"><i class="fa-solid fa-plus basket"></i></a>
                 </div>
+                <div class="textProd">
+                    <h3><?php echo $product['name']; ?></h3>
+                    <p class="detail"><?php echo $product['detail']; ?></p>
+                    <h3 class="price"><?php echo "฿ " . $product['price']; ?></h3>
+                </div>
+                <a href="cart.php?addcart='1'"><i class="fa-solid fa-plus basket"></i></a>
+            </div>
             <?php } ?>
         </div>
     </div>
@@ -133,5 +133,31 @@ if (isset($_GET['addcart'])) {
     </footer>
 
 </body>
+    
+<script>
+let list = document.querySelectorAll('.list');
+let product = document.querySelectorAll('.product');
+
+for (let i = 0; i < list.length; i++) {
+    list[i].addEventListener('click', function() {
+        for (let j = 0; j < list.length; j++) {
+            list[j].classList.remove('active');
+        }
+        this.classList.add('active');
+
+        let dataFilter = this.getAttribute('data-filter');
+
+        for (let k = 0; k < product.length; k++) {
+            product[k].classList.remove('active');
+            product[k].classList.add('hide');
+
+            if (product[k].getAttribute('data-item') == dataFilter || dataFilter == "all") {
+                product[k].classList.remove('hide');
+                product[k].classList.add('active');
+            }
+        }
+    })
+}
+</script>
 
 </html>
