@@ -1,16 +1,7 @@
-> โหลดไฟล์ RIOD.zip ใน Release ก่อน แล้วแตกไฟล์ไปไว้ที่ตำแหน่งที่ตัวเองต้องการ <
 
 1. เปิด xampp
 
-2. กด Start ที่ apache ( ตั้ง Config ไปตรงไฟล์ที่โหลดมา )
-   ⬇ ตัวอย่าง Alias ⬇
-------------------------------------------------------
-Alias /project1/ "d:/project/"  
-<Directory "d:/project/">        
-    Require all granted
-    Options Indexes FollowSymLinks
-</Directory>
-------------------------------------------------------
+2. กด Start ที่ apache
 
 3. กด Start ที่ mySQL ( ไม่ต้อง Edit )
 
@@ -39,6 +30,6 @@ Alias /project1/ "d:/project/"
 	- ไม่ต้อง set อะไรเลย
 	- กด import
 
-7. พิมพ์ localhost/project1/ ในช่อง url ( ชื่อ project1 ตามตัวอย่าง Alias )
+7. พิมพ์ localhost/RIOD-main/ ในช่อง url 
 
 8. เปิด RIOD
